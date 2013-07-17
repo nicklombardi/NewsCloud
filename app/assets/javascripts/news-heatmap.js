@@ -26,7 +26,7 @@ window.onload = function(){
   $.ajax({
     type: "GET",
     dataType: "json",
-    url: "/home/geocoded_clicks",
+    url: "/home/geocoded_points",
     success: function(data){
       mapData={
         max: 46,

@@ -10,24 +10,16 @@
 
   <%= render 'navbar' %>
 
-  <div class="blue_background">
 
-    <%= yield %>
-
-  </div>
+        <%= yield %>
 
 
-  <div class="container">
-    <div class="row">
-      <div class="span12">
         <%= bootstrap_flash %>
+
 
         <%= render 'content' %>
 
-      </div>
 
-    </div><!--/span-->
-  </div><!--/row-->
 
   <%= render 'footer' %>
 

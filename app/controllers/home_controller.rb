@@ -31,6 +31,14 @@ class HomeController < ApplicationController
       @geolocations << article['geo_facet']
     end
 
+    # @geolocations.each do |location|
+    #   if location[0] != nil
+    #     location[0] = @address_to_save
+    #     @address_to_save = Location.new(params[:address])
+    #     @address_to_save.save
+    #   end
+    # end
+
   end
 
   def view
@@ -40,8 +48,10 @@ class HomeController < ApplicationController
    end
   end
 
-  def geocoded_clicks
-    @geocoded_clicks = Location.geocoded_clicks
-    render :json => @geocoded_clicks
+  def geocoded_points
+    @geocoded_points = Location.geocoded_points
+    render :json => @geocoded_points
   end
+
+
 end

@@ -6,6 +6,8 @@
   =require twitter-bootstrap-static/fontawesome
   */
 
+
+
 .blue_background {
   background-color: #A4BEDE;
 }
@@ -228,6 +230,11 @@ hr {
 .breadcrumb > .active {
   color: #999999;
 }
+.row-fluid  {
+    margin-left:0;
+    margin-top: -500px;
+}
+
 
 .row-fluid > .span3:nth-child(4) {
     margin-left:0;

@@ -4,7 +4,7 @@ NewsCloud::Application.routes.draw do
 
   resources :home do
     collection do
-      get :geocoded_clicks
+      get :geocoded_points
     end
   end
 

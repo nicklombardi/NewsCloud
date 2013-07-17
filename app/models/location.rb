@@ -4,11 +4,11 @@ class Location < ActiveRecord::Base
   geocoded_by :address, :if => :ip_address_changed?
   after_validation :geocode
 
-  def self.geocoded_clicks
+  def self.geocoded_points
     geo_data = []
 
-    Location.by_location.each do |click|
-      geo_data << { lat:click.latitude, lng:click.longitude, count:click.count * 100 }
+    Location.by_location.each do |point|
+      geo_data << { lat:point.latitude, lng:point.longitude, count:point.count * 100 }
     end
 
     geo_data
