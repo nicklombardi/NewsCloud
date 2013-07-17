@@ -6,6 +6,10 @@
   =require twitter-bootstrap-static/fontawesome
   */
 
+.blue_background {
+  background-color: #A4BEDE;
+}
+
 .title {
   font-size: 20px
 }

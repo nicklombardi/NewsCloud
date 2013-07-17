@@ -14,3 +14,5 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+
+setTimeout("location.reload();",600000);

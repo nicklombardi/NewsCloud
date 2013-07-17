@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>IpHeatmap</title>
+  <title>NewsCloud</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -10,8 +10,11 @@
 
   <%= render 'navbar' %>
 
+  <div class="blue_background">
 
-        <%= yield %>
+    <%= yield %>
+
+  </div>
 
 
   <div class="container">
@@ -19,7 +22,7 @@
       <div class="span12">
         <%= bootstrap_flash %>
 
-        <%= render 'articles' %>
+        <%= render 'content' %>
 
       </div>
 

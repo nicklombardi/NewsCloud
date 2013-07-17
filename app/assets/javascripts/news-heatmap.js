@@ -4,7 +4,7 @@ var mapData;
 
 window.onload = function(){
 
-  var myLatlng = new google.maps.LatLng(19.309882,53.858612);
+  var myLatlng = new google.maps.LatLng(24.84414,6.115662);
 
   var myOptions = {
     zoom: 2,
