@@ -1,4 +1,13 @@
 NewsCloud::Application.routes.draw do
+
+  root :to => 'home#index'
+
+  resources :home do
+    collection do
+      get :geocoded_clicks
+    end
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
