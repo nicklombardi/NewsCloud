@@ -7,43 +7,46 @@ class HomeController < ApplicationController
 
     newswire_content = open("http://api.nytimes.com/svc/news/v3/content/all/all/.json?api-key=ae3c6baac9d440ef0696435d6aaacfb3:2:67872659").read
 
-    @newswire_articles = JSON.parse(newswire_content)['results']
+    # @newswire_articles = JSON.parse(newswire_content)['results']
 
-    @geolocations = []
+    # @geolocations = []
 
-    @newswire_articles.each do |article|
-      @geolocations << article['geo_facet']
-    end
+    # @newswire_articles.each do |article|
+    #   @geolocations << article['geo_facet']
+    # end
 
-    newswire_content_two = open("http://api.nytimes.com/svc/news/v3/content/all/all/.json?&offset=20&api-key=ae3c6baac9d440ef0696435d6aaacfb3:2:67872659").read
+    # newswire_content_two = open("http://api.nytimes.com/svc/news/v3/content/all/all/.json?&offset=20&api-key=ae3c6baac9d440ef0696435d6aaacfb3:2:67872659").read
 
-    @newswire_articles_two = JSON.parse(newswire_content_two)['results']
+    # @newswire_articles_two = JSON.parse(newswire_content_two)['results']
 
-    @newswire_articles_two.each do |article|
-      @geolocations << article['geo_facet']
-    end
+    # @newswire_articles_two.each do |article|
+    #   @geolocations << article['geo_facet']
+    # end
 
-    newswire_content_three = open("http://api.nytimes.com/svc/news/v3/content/all/all/.json?&offset=40&api-key=ae3c6baac9d440ef0696435d6aaacfb3:2:67872659").read
+    # newswire_content_three = open("http://api.nytimes.com/svc/news/v3/content/all/all/.json?&offset=40&api-key=ae3c6baac9d440ef0696435d6aaacfb3:2:67872659").read
 
-    @newswire_articles_three = JSON.parse(newswire_content_three)['results']
+    # @newswire_articles_three = JSON.parse(newswire_content_three)['results']
 
-    @newswire_articles_three.each do |article|
-      @geolocations << article['geo_facet']
-    end
+    # @newswire_articles_three.each do |article|
+    #   @geolocations << article['geo_facet']
+    # end
 
-    @address_to_save = []
-    @geolocations.each do |location|
-      unless location[0] == nil
-        @address_to_save << location[0]
-      end
-        @address_to_save.each do |saved_address|
-          saved_address = Location.new(:address => "#{saved_address}")
-          saved_address.save
-        end
-    end
+    # @address_to_save = []
+    # @geolocations.each do |location|
+    #   unless location[0] == nil
+    #     @address_to_save << location[0]
+    #   end
+    #     @address_to_save.each do |saved_article|
+    #       saved_article = Location.new(:address => "#{saved_article}")
+    #       saved_article.save
+    #     end
+    # end
 
   end
 
+   # saved_article = Location.where(:unique_id).first_or_initialize
+   # saved_article.address
+   # saved_article.save
 
 
 
