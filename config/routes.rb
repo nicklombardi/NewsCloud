@@ -4,6 +4,9 @@ NewsCloud::Application.routes.draw do
 
   resources :home do
     collection do
+      get :save_newswire
+    end
+    collection do
       get :geocoded_points
     end
   end

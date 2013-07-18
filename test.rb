@@ -26,4 +26,4 @@ first geolocation: <br>
   <% end %>
 <% end %>
 
-<%= @address_to_save %>
+<%= @articles_to_save %>

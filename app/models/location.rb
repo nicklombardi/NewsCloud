@@ -4,7 +4,10 @@ class Location < ActiveRecord::Base
   geocoded_by :address, :if => :address_changed?
   after_validation :geocode
 
+
+
   def self.geocoded_points
+
     geo_data = []
 
     Location.by_location.each do |point|

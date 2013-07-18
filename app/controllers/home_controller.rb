@@ -5,49 +5,26 @@ class HomeController < ApplicationController
 
     @articles = JSON.parse(content)['results']
 
+
     newswire_content = open("http://api.nytimes.com/svc/news/v3/content/all/all/.json?api-key=ae3c6baac9d440ef0696435d6aaacfb3:2:67872659").read
 
-    # @newswire_articles = JSON.parse(newswire_content)['results']
+    @newswire_articles = JSON.parse(newswire_content)['results']
 
-    # @geolocations = []
+    @geolocations = []
 
-    # @newswire_articles.each do |article|
-    #   @geolocations << article['geo_facet']
-    # end
+    @newswire_articles.each do |article|
+      @geolocations << article['geo_facet']
+    end
 
-    # newswire_content_two = open("http://api.nytimes.com/svc/news/v3/content/all/all/.json?&offset=20&api-key=ae3c6baac9d440ef0696435d6aaacfb3:2:67872659").read
+    @points_to_map = @geolocations.select { |item| item.is_a? Array }.flatten
 
-    # @newswire_articles_two = JSON.parse(newswire_content_two)['results']
-
-    # @newswire_articles_two.each do |article|
-    #   @geolocations << article['geo_facet']
-    # end
-
-    # newswire_content_three = open("http://api.nytimes.com/svc/news/v3/content/all/all/.json?&offset=40&api-key=ae3c6baac9d440ef0696435d6aaacfb3:2:67872659").read
-
-    # @newswire_articles_three = JSON.parse(newswire_content_three)['results']
-
-    # @newswire_articles_three.each do |article|
-    #   @geolocations << article['geo_facet']
-    # end
-
-    # @address_to_save = []
-    # @geolocations.each do |location|
-    #   unless location[0] == nil
-    #     @address_to_save << location[0]
-    #   end
-    #     @address_to_save.each do |saved_article|
-    #       saved_article = Location.new(:address => "#{saved_article}")
-    #       saved_article.save
-    #     end
-    # end
+    @points_to_map.each do |saved_point|
+      new_location = Location.new(:address => "#{saved_point}")
+      new_location.address = saved_point
+      new_location.save
+    end
 
   end
-
-   # saved_article = Location.where(:unique_id).first_or_initialize
-   # saved_article.address
-   # saved_article.save
-
 
 
   def view
@@ -56,6 +33,7 @@ class HomeController < ApplicationController
     f.js
    end
   end
+
 
   def geocoded_points
     @geocoded_points = Location.geocoded_points
