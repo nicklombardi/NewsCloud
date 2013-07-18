@@ -20,7 +20,6 @@ def save
 
     @newswire_articles_two.each do |article|
       @geolocations << article['geo_facet']
-      @url << article['url']
     end
 
     newswire_content_three = open("http://api.nytimes.com/svc/news/v3/content/all/all/.json?&offset=40&api-key=ae3c6baac9d440ef0696435d6aaacfb3:2:67872659").read
@@ -29,9 +28,9 @@ def save
 
     @newswire_articles_three.each do |article|
       @geolocations << article['geo_facet']
-      @url << article['url']
-
     end
+
+
 
     @points_to_map = @geolocations.select { |item| item.is_a? Array }.flatten
 

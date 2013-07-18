@@ -10,11 +10,29 @@ class HomeController < ApplicationController
 
     @newswire_articles = JSON.parse(newswire_content)['results']
 
-    @geolocations = []
+    @geolocations = @newswire_articles.map { |article| article['geo_facet'] }
 
-    @newswire_articles.each do |article|
-      @geolocations << article['geo_facet']
-    end
+
+    newswire_content = open("http://api.nytimes.com/svc/news/v3/content/all/all/.json?&offset=20&api-key=ae3c6baac9d440ef0696435d6aaacfb3:2:67872659").read
+
+    @newswire_articles_two = JSON.parse(newswire_content)['results']
+
+    @geolocations << @newswire_articles_two.map { |article| article['geo_facet'] }
+
+
+    newswire_content = open("http://api.nytimes.com/svc/news/v3/content/all/all/.json?&offset=40&api-key=ae3c6baac9d440ef0696435d6aaacfb3:2:67872659").read
+
+    @newswire_articles_three = JSON.parse(newswire_content)['results']
+
+    @geolocations << @newswire_articles_three.map { |article| article['geo_facet'] }
+
+
+    newswire_content = open("http://api.nytimes.com/svc/news/v3/content/all/all/.json?&offset=60&api-key=ae3c6baac9d440ef0696435d6aaacfb3:2:67872659").read
+
+    @newswire_articles_four = JSON.parse(newswire_content)['results']
+
+    @geolocations << @newswire_articles_four.map { |article| article['geo_facet'] }
+
 
     @points_to_map = @geolocations.select { |item| item.is_a? Array }.flatten
 
