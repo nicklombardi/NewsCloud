@@ -36,9 +36,14 @@ class HomeController < ApplicationController
       unless location[0] == nil
         @address_to_save << location[0]
       end
+        @address_to_save.each do |saved_address|
+          saved_address = Location.new(:address => "#{saved_address}")
+          saved_address.save
+        end
     end
 
   end
+
 
 
 
