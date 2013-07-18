@@ -9,3 +9,4 @@
 Location.create(address: "New York")
 Location.create(address: "London")
 Location.create(address: "Lafayette, NJ")
+Location.create(address: "Fairfield, nj")

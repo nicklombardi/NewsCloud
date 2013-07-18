@@ -13,3 +13,17 @@ geolocations collected: <br>
 
   <input type="hidden" name="name" value="#">
 </form>
+
+
+first geolocation: <br>
+  <% @geolocations.each do |location| %>
+  <%= location[0] %>
+<% end %>
+
+<% @geolocations.each do |location| %>
+  <% unless location[0] == nil %>
+    <%= location[0] %>,
+  <% end %>
+<% end %>
+
+<%= @address_to_save %>

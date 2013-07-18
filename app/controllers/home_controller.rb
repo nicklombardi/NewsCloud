@@ -31,15 +31,16 @@ class HomeController < ApplicationController
       @geolocations << article['geo_facet']
     end
 
-    # @geolocations.each do |location|
-    #   if location[0] != nil
-    #     location[0] = @address_to_save
-    #     @address_to_save = Location.new(params[:address])
-    #     @address_to_save.save
-    #   end
-    # end
+    @address_to_save = []
+    @geolocations.each do |location|
+      unless location[0] == nil
+        @address_to_save << location[0]
+      end
+    end
 
   end
+
+
 
   def view
    render do|f|

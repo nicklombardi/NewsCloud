@@ -1,7 +1,8 @@
 class Location < ActiveRecord::Base
   attr_accessible :address, :latitude, :longitude
 
-  geocoded_by :address, :if => :ip_address_changed?
+  geocoded_by :address
+  # , :if => :address_changed?
   after_validation :geocode
 
   def self.geocoded_points
