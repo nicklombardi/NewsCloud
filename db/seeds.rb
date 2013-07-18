@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-l1 = Location.create(address: "New York")
-l2 = Location.create(address: "London")
-l3 = Location.create(address: "Lafayette, NJ")
-l4 = Location.create(address: "Fairfield, nj")
+l1 = Location.create(address: "New York", url: "1")
+l2 = Location.create(address: "London", url: "2")
+l3 = Location.create(address: "Lafayette, NJ", url: "3")
+l4 = Location.create(address: "Fairfield, nj", url: "1")
