@@ -13,7 +13,7 @@ module HomeHelper
   end
 
   def google_api_access
-    "https://maps.googleapis.com/maps/api/js?key=AIzaSyAkc8i9GKFIZppGA4s3N9oZmp-Wwq7PR6E&sensor=false"
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyAp6_SjiivjEj-5rpqzHxi4F4u-2p40tIQ&sensor=false"
   end
 
 end
