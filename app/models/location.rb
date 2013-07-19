@@ -8,10 +8,13 @@ class Location < ActiveRecord::Base
 
   def self.geocoded_points
 
+
+
     geo_data = []
 
     Location.by_location.each do |point|
       geo_data << { lat:point.latitude, lng:point.longitude, count:point.count * 100 }
+
     end
 
     geo_data

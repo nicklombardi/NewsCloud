@@ -1,11 +1,14 @@
 NewsCloud::Application.routes.draw do
 
+  devise_for :users
+
+  devise_for :users do
+    get '/users/sign_out' => 'devise/sessions#destroy'
+end
+
   root :to => 'home#index'
 
   resources :home do
-    collection do
-      get :save_newswire
-    end
     collection do
       get :geocoded_points
     end

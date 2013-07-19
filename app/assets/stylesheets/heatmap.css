@@ -17,6 +17,14 @@ body, html {
   border: 0x;
 }
 
+.center {
+text-align: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
 .overlay {
   z-index:10;
   position:relative;

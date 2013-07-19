@@ -8,16 +8,16 @@ module HomeHelper
     paren_string.gsub("(", "").gsub(")", "")
   end
 
-  # def google_maps_api_key
-  #   "AIzaSyAkc8i9GKFIZppGA4s3N9oZmp-Wwq7PR6E"
-  # end
+  def google_maps_api_key
+    "AIzaSyAkc8i9GKFIZppGA4s3N9oZmp-Wwq7PR6E"
+  end
 
   # def google_api_url
   #   "http://maps.googleapis.com/maps/api/js"
   # end
 
-  # def google_api_access
-  #   "#{google_api_url}?key=#{AIzaSyAkc8i9GKFIZppGA4s3N9oZmp-Wwq7PR6E}&libraries=geometry&sensor=false"
-  # end
+  def google_api_access
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyAkc8i9GKFIZppGA4s3N9oZmp-Wwq7PR6E&sensor=false"
+  end
 
 end
