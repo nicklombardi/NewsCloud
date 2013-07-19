@@ -12,7 +12,7 @@ class HomeController < ApplicationController
 
     @geolocations = @newswire_articles.map { |article| article['geo_facet'] }
 
-
+    # these queries add more locations to search:
     # newswire_content = open("http://api.nytimes.com/svc/news/v3/content/all/all/.json?&offset=20&api-key=ae3c6baac9d440ef0696435d6aaacfb3:2:67872659").read
 
     # @newswire_articles_two = JSON.parse(newswire_content)['results']

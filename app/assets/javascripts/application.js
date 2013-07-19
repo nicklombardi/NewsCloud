@@ -15,4 +15,4 @@
 //= require twitter/bootstrap
 //= require_tree .
 
-setTimeout("location.reload();",600000);
+setTimeout("location.reload();",21600000);

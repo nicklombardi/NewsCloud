@@ -21,7 +21,7 @@ window.onload = function(){
 
   map = new google.maps.Map(document.getElementById("heatmapArea"), myOptions);
 
-  heatmap = new HeatmapOverlay(map, {"radius":10, "visible":true, "opacity":60});
+  heatmap = new HeatmapOverlay(map, {"radius":11, "visible":true, "opacity":50});
 
   $.ajax({
     type: "GET",
