@@ -14,6 +14,7 @@ end
     end
   end
 
+  resources :search
 
   resources :about, only: [:index, :show,]
 
