@@ -16,6 +16,8 @@ end
 
 gem 'newrelic_rpm'
 
+gem 'taps'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'gits://github.com/rails/rails.git'
 
