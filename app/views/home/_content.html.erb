@@ -13,7 +13,7 @@
     <div class="span4">
       <div class="breadcrumb">
         <p class="article_title">
-          <a href="<%= article['url'] %>">
+          <a href="<%= article['url'] %>" target="_blank">
           <%= format(article['title']) %></a>
          </p>
         <hr>
@@ -24,11 +24,11 @@
     </div>
   <% end %>
 
-  <% @articles[3..-2].each do |article| %>
+  <% @articles[3..10].each do |article| %>
     <div class="span3">
       <div class="breadcrumb">
         <p class="article_title_2">
-          <a href="<%= article['url'] %>">
+          <a href="<%= article['url'] %>" target="_blank">
           <%= format(article['title']) %></a>
          </p>
         <hr>
@@ -39,11 +39,22 @@
     </div>
   <% end %>
 
+  <% @articles[11..-2].each do |article| %>
+    <div class="span6">
+      <div class="breadcrumb_smallest">
+        <p> <span class="article_title_2">
+          <a href="<%= article['url'] %>" target="_blank">
+          <%= format(article['title']) %> </a></span>
+        <span class ="small_text">
+          <%= format(article['abstract']) %></span>
+        </p>
+      </div>
+    </div>
+  <% end %>
+
 </div>
-<hr>
-
-
-<%= @article_to_save %>
+<br>
+<br>
 
 
 

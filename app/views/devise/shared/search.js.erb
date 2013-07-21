@@ -28,7 +28,7 @@ function loadScript() {
   if ( typeof google === 'undefined' ) {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src = "http://maps.googleapis.com/maps/api/js?<%= "key=#{ENV['AIzaSyAkc8i9GKFIZppGA4s3N9oZmp-Wwq7PR6E']}&" if Rails.env.production? %>sensor=false&callback=loadGeocoder";
+    script.src = "http://maps.googleapis.com/maps/api/js?<%= "key=#{ENV['AIzaSyAp6_SjiivjEj-5rpqzHxi4F4u-2p40tIQ']}&" if Rails.env.production? %>sensor=false&callback=loadGeocoder";
     document.body.appendChild(script);
   }
   else {
