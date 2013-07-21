@@ -1,5 +1,4 @@
 body, html {
-    margin-top:20px;
     padding:0;
     font-family:Arial;
 }
@@ -28,13 +27,17 @@ text-align: left;
 .overlay {
   z-index:10;
   position:relative;
-  top: -425px;
+  top: -445px;
     text-align: left;
   display: block;
   margin-left: auto;
   margin-right: auto;
     border: 0x;
+    height: 445px;
+}
 
+button.btn.btn-navbar {
+  margin-right: 40px;
 }
 
 
@@ -44,8 +47,8 @@ text-align: left;
     margin-left:auto;
     margin-right:auto;
     width:1020px;
-    height:425px;
+    height:445px;
       border: 0x;
-
+margin-top: -20px;
 }
 

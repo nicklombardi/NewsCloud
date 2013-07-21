@@ -38,11 +38,10 @@
   display: block;
   float: left;
   padding: 10px 20px 10px;
-  margin-left: -20px;
+  margin-left: 20px;
   font-size: 20px;
   font-weight: 200;
   color: #3872FF;
-  text-shadow: 0 1px 0 #ffffff;
 }
 
 .btn {
@@ -302,8 +301,8 @@ hr {
 .breadcrumb_small {
   padding: 8px 15px;
   margin: 0 0 20px;
-  min-height:150px;
-  max-height:150px;
+  min-height:120px;
+  max-height:120px;
   list-style: none;
   background-color: #f5f5f5;
   -webkit-border-radius: 4px;
@@ -318,8 +317,8 @@ hr {
 .breadcrumb_smallest {
   padding: 8px 15px;
   margin: 0 0 20px;
-  min-height:60px;
-  max-height:60px;
+  min-height:50px;
+  max-height:50px;
   list-style: none;
   background-color: #f5f5f5;
   -webkit-border-radius: 4px;
@@ -364,7 +363,12 @@ hr {
 }
 .row-fluid  {
     margin-left:0;
-    margin-top: -435px;
+    margin-top: -230px;
+}
+
+.row-fluid-map  {
+    margin-left:0;
+    width: 100%;
 }
 
 
