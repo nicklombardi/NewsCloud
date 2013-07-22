@@ -2,7 +2,6 @@ class Location < ActiveRecord::Base
   attr_accessible :address, :latitude, :longitude, :url
 
   geocoded_by :address, :if => :address_changed?
-  # switch to client side geocoding
   after_validation :geocode
 
 
@@ -11,7 +10,7 @@ class Location < ActiveRecord::Base
     geo_data = []
 
     Location.by_location.each do |point|
-      geo_data << { lat:point.latitude, lng:point.longitude, count:point.count * 50 }
+      geo_data << { lat:point.latitude, lng:point.longitude, count:point.count * 25 }
     end
 
     geo_data
