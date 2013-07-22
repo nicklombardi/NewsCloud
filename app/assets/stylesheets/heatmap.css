@@ -27,13 +27,14 @@ text-align: left;
 .overlay {
   z-index:10;
   position:relative;
-  top: -445px;
+  top: -425px;
     text-align: left;
   display: block;
   margin-left: auto;
   margin-right: auto;
     border: 0x;
-    height: 445px;
+    width: 1020px;
+    height: 425px;
 }
 
 button.btn.btn-navbar {
@@ -50,5 +51,6 @@ button.btn.btn-navbar {
     height:445px;
       border: 0x;
 margin-top: -20px;
+padding:0;
 }
 

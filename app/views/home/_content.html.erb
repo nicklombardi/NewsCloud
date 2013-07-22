@@ -1,5 +1,16 @@
+
 <div class="layout">
-<%= image_tag("overlay.png", :class => "overlay") %>
+  <div class="overlay">
+    <img src="<%= asset_path('overlay5.png') %>" id="image" alt="just nothing">
+
+<script type="text/javascript">
+if(screen.width>=1020){
+  document.getElementById('image').src = "<%= asset_path('overlay5.png') %>";
+}
+
+</script>
+
+</div>
 </div>
 
 <br><br>

@@ -14,9 +14,12 @@ group :development, :test do
   gem 'debugger'
 end
 
-gem 'newrelic_rpm'
+# gem 'newrelic_rpm'
 
-gem 'taps'
+# gem 'taps'
+
+gem 'yaml_db'
+gem 'therubyracer'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'gits://github.com/rails/rails.git'
@@ -35,7 +38,6 @@ gem 'haml'
 # in production environments by default.
 
 
-gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

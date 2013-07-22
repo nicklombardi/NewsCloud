@@ -11,7 +11,7 @@ class Location < ActiveRecord::Base
     geo_data = []
 
     Location.by_location.each do |point|
-      geo_data << { lat:point.latitude, lng:point.longitude, count:point.count * 100 }
+      geo_data << { lat:point.latitude, lng:point.longitude, count:point.count * 50 }
     end
 
     geo_data
