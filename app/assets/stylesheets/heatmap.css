@@ -1,23 +1,23 @@
 body, html {
-    padding:0;
-    font-family:Arial;
+  padding:0;
+  font-family:Arial;
 }
 
 #main {
-    margin-left:auto;
-    margin-right:auto;
-    width:auto;
-    margin:auto;
+  margin-left:auto;
+  margin-right:auto;
+  width:auto;
+  margin:auto;
 }
 
 .layout
 {
   text-align: center;
-  border: 0x;
+  border: 0;
 }
 
 .center {
-text-align: left;
+  text-align: left;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -28,13 +28,13 @@ text-align: left;
   z-index:10;
   position:relative;
   top: -425px;
-    text-align: left;
+  text-align: left;
   display: block;
   margin-left: auto;
   margin-right: auto;
-    border: 0x;
-    width: 1020px;
-    height: 425px;
+  border: 0;
+  width: 1020px;
+  height: 425px;
 }
 
 button.btn.btn-navbar {
@@ -43,14 +43,14 @@ button.btn.btn-navbar {
 
 
 #heatmapArea {
-    position: fixed;
-    z-index: auto;
-    margin-left:auto;
-    margin-right:auto;
-    width:1020px;
-    height:445px;
-      border: 0x;
-margin-top: -20px;
-padding:0;
+  position: fixed;
+  z-index: auto;
+  margin-left:auto;
+  margin-right:auto;
+  width:1020px;
+  height:445px;
+  border: 0;
+  margin-top: -20px;
+  padding:0;
 }
 

@@ -7,20 +7,27 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
-gem 'devise'
+gem 'jquery-rails', '~> 3.0.4'
+gem 'devise', '~> 3.0.0'
 
 group :development, :test do
   gem 'debugger'
 end
 
-# gem 'newrelic_rpm'
-
-# gem 'taps'
-
+gem 'actionpack', '~>3.2.13'
+gem 'activerecord', '~>3.2.13'
+gem 'actionmailer', '~>3.2.13'
+gem 'activemodel', '~>3.2.13'
+gem 'activeresource', '~>3.2.13'
+gem 'activerecord', '~>3.2.13'
+gem 'arel', '~> 3.0.2'
+gem 'i18n', '~> 0.6.1'
 gem 'yaml_db'
 gem 'therubyracer'
-gem 'mysql2'
+
+group :production do
+  gem 'mysql2'
+end
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'gits://github.com/rails/rails.git'
@@ -28,17 +35,16 @@ gem 'mysql2'
 gem "twitter-bootstrap-rails", "~> 2.2.7"
 gem 'bootstrap-sass', '~> 2.3.2.0'
 gem "json"
-# gem 'gmaps4rails'
 
 gem 'geocoder'
 gem 'haml'
 
-# gem "rails-ajax", "~> 0.1.2.20130211"
 
 # Gems used only for assets and not required
 # in production environments by default.
 
-
+gem "nokogiri"
+gem "bundler"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -56,7 +62,6 @@ gem 'haml'
 # gem 'debugger'
 
 
-gem 'pg', :group => :production
 
 group :development, :test do
 

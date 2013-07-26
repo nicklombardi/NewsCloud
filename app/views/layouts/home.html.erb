@@ -8,18 +8,21 @@
 </head>
 <body>
 
-<%= render 'navbar' %>
+  <%= render 'navbar' %>
+
 <div class="pad">
-          <%= bootstrap_flash %>
+
+  <%= bootstrap_flash %>
+
 </div>
+
 <div class="row-fluid-map">
 
-        <%= yield %>
+  <%= yield %>
 
 </div>
-        <%= render 'content' %>
 
-
+  <%= render 'content' %>
 
   <%= render 'footer' %>
 
