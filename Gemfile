@@ -26,7 +26,7 @@ gem 'yaml_db'
 gem 'therubyracer'
 
 group :production do
-  gem 'mysql2'
+  gem 'sqlite3-ruby', :require => 'sqlite3'
 end
 
 # Bundle edge Rails instead:

@@ -35,6 +35,7 @@ body, html {
   border: 0;
   width: 1020px;
   height: 425px;
+  margin-bottom: -435px;
 }
 
 button.btn.btn-navbar {

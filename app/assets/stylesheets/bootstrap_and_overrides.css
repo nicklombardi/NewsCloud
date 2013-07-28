@@ -1,10 +1,10 @@
 /*
-  =require twitter-bootstrap-static/bootstrap
 
   Use Font Awesome icons (default)
   To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
   =require twitter-bootstrap-static/fontawesome
   */
+
 
 
 .pad {
@@ -362,73 +362,77 @@ color: #ccc;
 .breadcrumb > .active {
   color: #999999;
 }
-.row-fluid  {
-  margin-left:0;
-  margin-top: -220px;
+.margins  {
+  margin-left: 30px;
+  margin-right: 30px;
+  /*margin-top: -220px;*/
 }
 
-.row-fluid-map  {
+.row-map  {
   margin-left:0;
   width: 100%;
 }
-.row-fluid > .span4:nth-child(3) {
+.span4:nth-child(3) {
   margin-right:0;
 }
 
-.row-fluid > .span3:nth-child(7) {
+.span3:nth-child(7) {
   margin-right:0;
 }
 
-.row-fluid > .span3:nth-child(11) {
+.span3:nth-child(11) {
   margin-right:0;
 }
 
-.row-fluid > .span6:nth-child(13) {
+.span6:nth-child(13) {
   margin-right:0;
 }
-.row-fluid > .span6:nth-child(15) {
+.span6:nth-child(15) {
   margin-right:0;
 }
-.row-fluid > .span6:nth-child(17) {
+.span6:nth-child(17) {
   margin-right:0;
 }
-.row-fluid > .span6:nth-child(19) {
+.span6:nth-child(19) {
   margin-right:0;
 }
 
-
-.row-fluid > .span3:nth-child(4) {
+.span4:nth-child(1) {
   margin-left:0;
 }
 
-.row-fluid > .span3:nth-child(8) {
+.span3:nth-child(4) {
   margin-left:0;
 }
 
-.row-fluid > .span3:nth-child(12) {
+.span3:nth-child(8) {
   margin-left:0;
 }
 
-.row-fluid > .span3:nth-child(16) {
+.span3:nth-child(12) {
   margin-left:0;
 }
 
-.row-fluid > .span3:nth-child(20) {
+.span3:nth-child(16) {
   margin-left:0;
 }
 
-.row-fluid > .span6:nth-child(12) {
+.span3:nth-child(20) {
   margin-left:0;
 }
-.row-fluid > .span6:nth-child(14) {
+
+.span6:nth-child(12) {
   margin-left:0;
 }
-.row-fluid > .span6:nth-child(16) {
+.span6:nth-child(14) {
   margin-left:0;
 }
-.row-fluid > .span6:nth-child(18) {
+.span6:nth-child(16) {
   margin-left:0;
 }
-.row-fluid > .span6:nth-child(20) {
+.span6:nth-child(18) {
+  margin-left:0;
+}
+.span6:nth-child(20) {
   margin-left:0;
 }
