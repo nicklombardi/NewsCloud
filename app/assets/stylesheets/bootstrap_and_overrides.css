@@ -1,11 +1,16 @@
 /*
+  =require twitter-bootstrap-static/bootstrap
+
 
   Use Font Awesome icons (default)
   To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
   =require twitter-bootstrap-static/fontawesome
   */
 
-
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 200;
+}
 
 .pad {
   padding-top: 40px;
@@ -43,8 +48,9 @@
   padding: 10px 20px 10px;
   margin-left: 5px;
   font-size: 20px;
-  font-weight: 200;
   color: #3872FF;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
 }
 
 .btn {
@@ -300,7 +306,8 @@ hr {
 }
 
 .breadcrumb_small {
-  padding: 8px 15px;
+  padding: 20px;
+  padding-top: 15px;
   margin: 0 0 20px;
   min-height:120px;
   max-height:120px;
@@ -309,14 +316,14 @@ hr {
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
-  overflow: auto;
-  text-overflow: ellipsis;
-    border: 10px solid #F5F5F5;
+
+    border: 1px solid #E8EBE5;
 
 }
 
 .breadcrumb_smallest {
-  padding: 8px 15px;
+  padding: 20px;
+  padding-top: 15px;
   margin: 0 0 20px;
   min-height:50px;
   max-height:50px;
@@ -325,14 +332,14 @@ hr {
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
-  overflow: auto;
-  text-overflow: ellipsis;
-    border: 10px solid #F5F5F5;
+
+    border: 1px solid #E8EBE5;
 
 }
 
 .breadcrumb {
-  padding: 8px 15px;
+  padding: 20px;
+  padding-top: 15px;
   margin: 0 0 20px;
   min-height:135px;
   max-height:135px;
@@ -341,9 +348,8 @@ hr {
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
-  overflow: auto;
-  text-overflow: ellipsis;
-  border: 10px solid #F5F5F5;
+
+  border: 1px solid #E8EBE5;
 }
 
 .breadcrumb > li {

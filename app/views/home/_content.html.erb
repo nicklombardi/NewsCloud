@@ -25,11 +25,11 @@ if(screen.width>=1020){
       <div class="breadcrumb">
         <p class="article_title">
           <a href="<%= article['url'] %>" target="_blank">
-          <%= format(article['title']) %></a>
+          <%= truncate(format(article['title']), :length => 60)  %></a>
         </p>
         <hr>
         <p>
-          <%= format(article['abstract']) %>
+          <%= truncate(format(article['abstract']), :length => 200) %>
         </p>
       </div>
     </div>
@@ -40,11 +40,11 @@ if(screen.width>=1020){
       <div class="breadcrumb_small">
         <p class="article_title_2">
           <a href="<%= article['url'] %>" target="_blank">
-          <%= format(article['title']) %></a>
+          <%= truncate(format(article['title']), :length => 50)  %></a>
         </p>
         <hr>
         <p class ="small_text">
-          <%= format(article['abstract']) %>
+          <%= truncate(format(article['abstract']), :length => 130) %>
         </p>
       </div>
     </div>
@@ -55,9 +55,9 @@ if(screen.width>=1020){
       <div class="breadcrumb_smallest">
         <p> <span class="article_title_2">
           <a href="<%= article['url'] %>" target="_blank">
-          <%= format(article['title']) %> </a></span>
+          <%= truncate(format(article['title']), :length => 60)  %></a></span>
         <span class ="small_text">
-          <%= format(article['abstract']) %></span>
+          <%= truncate(format(article['abstract']), :length => 140) %></span>
       </p>
       </div>
     </div>

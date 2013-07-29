@@ -1,0 +1,36 @@
+ <div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="/">NewsCloud</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <!-- <li><a href="/about">About</a></li> -->
+          <!--<li><a href="/contact">Contact</a></li>-->
+        </ul>
+        <div class="navbar-form pull-right">
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+
+            <% if current_user %>
+             <li><a href=""> Hello <%= current_user.email %></a></li>
+            <li><button class="btn"><a href="/users/sign_out">Sign Out</a></button></li>
+            <% else %>
+
+            <li><a href="/users/sign_up">Sign Up</a></li>
+            <li><button class="btn"><a href="/users/sign_in">Sign In</a></button></li>
+             <span class="icon-bar"></span>
+            <% end %>
+
+           </ul>
+          </div>
+        </div>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+</div>
+
