@@ -14,7 +14,9 @@ NewsCloud::Application.routes.draw do
     end
   end
 
-  resources :about, only: [:index, :show,]
+  resources :welcome, only: [:index, :show]
+
+  # resources :about, only: [:index, :show,]
 
   # resources :contact, only: [:index, :show,]
 
