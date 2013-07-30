@@ -5,31 +5,40 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+    <style media="screen" type="text/css">
+  html {
+  /* set up a background image */
+  background: url(/assets/background.jpg);
+
+  /* the follow is the code to have the image display as a full page */
+  background-attachment: fixed;
+  -webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
 </head>
 <body>
 
-  <%= render 'navbar' %>
-
-<div class="pad">
+<%= render 'navbar' %>
 
   <%= bootstrap_flash %>
 
-</div>
 
-  <br><br>
+<div class="overlayInline" style="z-index: 20; position:absolute; width: 100%;
+  text-align: center; top: 50%;
+   margin-top: -200px;">
+<div id="container" style="display: inline-block;">
+<div class="welcome" style="width=600px">
 
-  <div class="container">
-    <div class="row">
 
-    <br><br>
 
-    <div class="layout">
-      <div class="hero-unit-about">
-
-        <%= yield %>
+      <%= yield %>
 
       </div>
     </div>
+
 
   </div>
 

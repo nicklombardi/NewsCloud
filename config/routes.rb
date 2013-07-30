@@ -6,7 +6,7 @@ NewsCloud::Application.routes.draw do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
 
-  root :to => 'home#index'
+  root :to => 'welcome#index'
 
   resources :home do
     collection do

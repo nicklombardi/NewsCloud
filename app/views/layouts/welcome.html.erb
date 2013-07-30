@@ -5,7 +5,7 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-  <style media="screen" type="text/css">
+    <style media="screen" type="text/css">
   html {
   /* set up a background image */
   background: url(/assets/background.jpg);
@@ -21,22 +21,25 @@
 </head>
 <body>
 
-  <%= render 'navbar' %>
-
+<%= render 'navbar' %>
 
   <%= bootstrap_flash %>
 
 
-  <br><br>
+<div class="overlayInline" style="z-index: 20; position:absolute; width: 100%;
+  text-align: center; top: 50%;
+   margin-top: -125px;">
+<div id="container" style="display: inline-block;" >
 
 
 
-    <div class="layout">
+      <%= yield %>
+    </div>
 
 
-        <%= yield %>
+  </div>
 
-
+</div>
 
   <%= render 'footer' %>
 
