@@ -4,9 +4,9 @@ $(".myBox").click(function(){
 });
 
 $(".welcome").mouseenter(function(){
-  $(".welcome").fadeTo("fast",0.8);
+  $(".welcome").fadeTo("fast",1);
 });
 
 $(".welcome").mouseleave(function(){
-  $(".welcome").fadeTo("fast",1);
+  $(".welcome").fadeTo("fast",.8);
 });
