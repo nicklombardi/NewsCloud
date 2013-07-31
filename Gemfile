@@ -26,6 +26,8 @@ gem 'arel', '~> 3.0.2'
 gem 'i18n', '~> 0.6.1'
 gem 'yaml_db'
 gem 'therubyracer'
+gem 'rack-google-analytics'
+
 
 group :production do
   # gem 'sqlite3-ruby', :require => 'sqlite3'
