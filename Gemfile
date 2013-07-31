@@ -14,6 +14,8 @@ group :development, :test do
   gem 'debugger'
 end
 
+gem 'whenever', :require => false
+
 gem 'actionpack', '~>3.2.13'
 gem 'activerecord', '~>3.2.13'
 gem 'actionmailer', '~>3.2.13'
