@@ -8,6 +8,8 @@ NewsCloud::Application.routes.draw do
 
   root :to => 'welcome#index'
 
+  # resources :home
+
   resources :home do
     collection do
       get :geocoded_points
