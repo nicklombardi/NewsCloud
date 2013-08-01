@@ -15,14 +15,15 @@ class HomeController < ApplicationController
    end
   end
 
+
   def show
-
   end
 
-  def geocoded_points
-    @geocoded_points = Location.geocoded_points
-    render :json => @geocoded_points
-  end
+
+  # def geocoded_points
+  #   @geocoded_points = Location.geocoded_points
+  #   render :json => @geocoded_points
+  # end
 
 
 end

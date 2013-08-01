@@ -47,6 +47,7 @@ body {
   float: left;
   padding: 10px 20px 10px;
   margin-left: 5px;
+  margin-top: 5px;
   font-size: 20px;
   color: #3872FF;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -245,7 +246,7 @@ hr {
   margin-bottom: 30px;
   font-size: 18px;
   font-weight: 200;
-  line-height: 30px;
+  line-height: 28px;
     cursor: pointer;
 
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);

@@ -1,10 +1,4 @@
-class Location < ActiveRecord::Base
-
-  attr_accessible :address, :latitude, :longitude, :url
-
-  geocoded_by :address, :if => :address_changed?
-  after_validation :geocode
-
+task :geocode_points => :environment do
 
   def self.geocoded_points
 
@@ -20,4 +14,5 @@ class Location < ActiveRecord::Base
   def self.by_location
     all(:select => "latitude, longitude, COUNT(*) as count", :group => "latitude, longitude")
   end
+
 end
