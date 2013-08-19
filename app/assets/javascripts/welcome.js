@@ -27,7 +27,7 @@ event.preventDefault();
 
 newLocation = this.href;
 
-$('.welcome').fadeOut(1000, newpage);
+$('.welcome').fadeOut(500, newpage);
 
 });
 
